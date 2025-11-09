@@ -18,21 +18,22 @@ public class LevelManager : MonoBehaviour {
 
     private void Start()
     {
-        currency = 100;
+        currency = 10000;
     }
 
     public void IncreaseCurrency(int amount)
     {
         currency += amount;
     }
-    
+
     public bool SpendCurrency(int amount)
     {
         if (amount <= currency)
         {
             currency -= amount;
             return true;
-        } else
+        }
+        else
         {
             Debug.Log("Not enough currency!");
             return false;

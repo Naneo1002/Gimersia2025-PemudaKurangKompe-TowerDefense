@@ -22,6 +22,13 @@ public class EnemyMovement : MonoBehaviour{
             pathIndex++;
 
             if (pathIndex == LevelManager.main.path.Length) {
+                // Enemy reached the end of the path: reduce player lives and destroy enemy
+                if (LifeSystem.main != null) {
+                    LifeSystem.main.LoseLife(1);
+                } else {
+                    Debug.LogWarning("LifeSystem not found in scene. Add a LifeSystem component to a GameObject.");
+                }
+
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
                 return;
@@ -31,9 +38,11 @@ public class EnemyMovement : MonoBehaviour{
         }
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         Vector2 direction = (target.position - transform.position).normalized;
 
         rb.velocity = direction * moveSpeed;
     }
+    
 }
