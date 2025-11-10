@@ -81,11 +81,10 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
-  bulletPrefab: {fileID: 5942370938828401323, guid: ebc996f4163878f4094061b219aac4cb, type: 3}
+  bulletPrefab: {fileID: 5942370938828401323, guid: 7cc0abed4a894804e87c431b630b5248, type: 3}
   firingPoint: {fileID: 749852571509690705}
   wizardObject: {fileID: 8053492063216567074}
   targetingRange: 5
-  rotationSpeed: 250
   bps: 1
 --- !u!1 &6864336952828133018
 GameObject:
@@ -290,8 +289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de68f903f9a534408c215c1a1d1a15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 4472793341280532656}
-  turret: {fileID: 6502950468522888305}
 --- !u!1 &8294800716967935146
 GameObject:
   m_ObjectHideFlags: 0
