@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+    path: Assets/Scenes/MainMenu.unity
+    guid: ef9bb567c2280944a849c030911e3a91
+  - enabled: 1
+    path: Assets/Scenes/NewGame.unity
+    guid: cb87cf7e0c4839e4c8077ecb6ac506f3
+  - enabled: 1
+>>>>>>> Stashed changes
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/EndlessMode.unity
+    guid: dc49e8205b1c6fc44bcfa97f4fc7fb58
   m_configObjects: {}
