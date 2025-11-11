@@ -10,6 +10,16 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void NewGameMenu()
+    {
+        SceneManager.LoadScene("NewGame");
+    }
+
+    public void EndlessMode() {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("EndlessMode");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

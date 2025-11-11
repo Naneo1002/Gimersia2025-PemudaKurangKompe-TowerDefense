@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ef9bb567c2280944a849c030911e3a91
   - enabled: 1
+    path: Assets/Scenes/NewGame.unity
+    guid: 1ec3fcd323a3983429bb7bd9b0cb4995
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/EndlessMode.unity
+    guid: 6c4bcf52ead161d43bbd44bfd10b63d5
   m_configObjects: {}

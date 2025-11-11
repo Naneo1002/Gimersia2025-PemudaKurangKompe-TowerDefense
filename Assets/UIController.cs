@@ -206,6 +206,11 @@ public class UIController : MonoBehaviour
         SceneManager.LoadScene(currentScene.buildIndex);
     }
 
+    public void EndlessMode() {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("EndlessMode");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
@@ -262,7 +267,18 @@ public class UIController : MonoBehaviour
     {
         if (objectiveText != null)
         {
-            objectiveText.text = "Objective: Defend your base! Survive 10 waves.";
+            // Read the active scene name at runtime so the objective can vary per scene
+            string sceneName = SceneManager.GetActiveScene().name;
+
+            if (sceneName == "EndlessMode")
+            {
+                objectiveText.text = "Objective: Defend your base!";
+            }
+            else
+            {
+                // Default / normal mode objective
+                objectiveText.text = "Objective: Defend your base! Survive 10 waves.";
+            }
             objectiveText.gameObject.SetActive(true);
             yield return new WaitForSeconds(3f);
             objectiveText.gameObject.SetActive(false);
