@@ -22,6 +22,11 @@ public class Bullet : MonoBehaviour
         timeAlive = 0f;
     }
 
+    public void SetDamage(int damage)
+    {
+        bulletDamage = damage;
+    }
+
     private void Update()
     {
         timeAlive += Time.deltaTime;

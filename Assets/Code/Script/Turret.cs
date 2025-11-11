@@ -104,6 +104,11 @@ public class Turret : MonoBehaviour
 
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+        
+        // Scale bullet damage by turret level (50% increase per level)
+        int scaledDamage = Mathf.RoundToInt(1 * Mathf.Pow(1.5f, level - 1));
+        bulletScript.SetDamage(scaledDamage);
+        
         bulletScript.SetTarget(target);
     }
 
