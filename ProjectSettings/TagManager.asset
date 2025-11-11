@@ -44,3 +44,6 @@ TagManager:
   - name: Turrets
     uniqueID: 1819146751
     locked: 0
+  - name: Upgrade
+    uniqueID: 1950472415
+    locked: 0

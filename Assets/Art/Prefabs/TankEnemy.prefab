@@ -178,3 +178,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 4
   currencyWorth: 100
+  healthBarPrefab: {fileID: 4688471341631164503, guid: c533138d8e19e3d459c4b31058789446, type: 3}
+  barOffset: {x: 0, y: 2, z: 0}
+  barLocalScale: 0.1

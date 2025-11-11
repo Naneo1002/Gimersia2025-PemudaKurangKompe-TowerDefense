@@ -8,7 +8,8 @@ public class Plot : MonoBehaviour
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
 
-    private GameObject tower;
+    private GameObject towerObj;
+    public Turret turret;
     private Color startColor;
 
     private void Start()
@@ -18,7 +19,7 @@ public class Plot : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (Time.timeScale == 0f) return;
+        if (Time.timeScale == 0) return;
         sr.color = hoverColor;
     }
 
@@ -29,24 +30,27 @@ public class Plot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Time.timeScale == 0f) return;
-        if (tower != null)
+        if (Time.timeScale == 0) return;
+        if (UIManager.main.IsHoveringUI()) return;
+
+        if (towerObj != null)
         {
-            LevelManager.main.ShowWarningMessage("Cannot build here - Plot is occupied!");
+            turret.OpenUpgradeUI();
             return;
         }
+
 
         Tower towerToBuild = BuildManager.main.GetSelectedTower();
 
         if (towerToBuild.cost > LevelManager.main.currency)
         {
-            // Use LevelManager's SpendCurrency which will show the warning message
-            LevelManager.main.SpendCurrency(towerToBuild.cost);
+            Debug.Log("Not enough currency to build that!");
             return;
         }
 
         LevelManager.main.SpendCurrency(towerToBuild.cost);
 
-        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+        towerObj = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+        turret = towerObj.GetComponent<Turret>();
     }
 }
