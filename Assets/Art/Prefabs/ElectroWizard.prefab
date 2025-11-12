@@ -408,7 +408,7 @@ MonoBehaviour:
   wizardObject: {fileID: 8053492063216567074}
   upgradeUI: {fileID: 1841215170481991897}
   upgradeButton: {fileID: 3555529154151853393}
-  targetingRange: 7
+  targetingRange: 3
   bps: 1
   baseUpgradeCost: 100
 --- !u!1 &6864336952828133018

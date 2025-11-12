@@ -327,7 +327,7 @@ MonoBehaviour:
   freezeMultiplier: 0.5
   upgradeUI: {fileID: 1841215170481991897}
   upgradeButton: {fileID: 3555529154151853393}
-  baseUpgradeCost: 100
+  baseUpgradeCost: 150
 --- !u!120 &4297955746327076680
 LineRenderer:
   serializedVersion: 2
