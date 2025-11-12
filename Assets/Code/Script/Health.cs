@@ -19,6 +19,14 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
+        // Scale hitPoints by wave: each wave increases health by 50% (multiply by 1.5)
+        EnemySpawner spawner = FindObjectOfType<EnemySpawner>();
+        if (spawner != null)
+        {
+            int currentWave = spawner.CurrentWave;
+            hitPoints = Mathf.RoundToInt(hitPoints * Mathf.Pow(1.5f, currentWave - 1));
+        }
+
         maxHitPoints = hitPoints;
 
         if (healthBarPrefab != null)

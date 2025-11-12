@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4538974850900174151}
   - component: {fileID: 2737072471286894106}
   - component: {fileID: 7263413886291913137}
-  - component: {fileID: 3664056763035321678}
+  - component: {fileID: 9117801626133649441}
   m_Layer: 7
   m_Name: BulletElectro
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.665, y: -0.062, z: 0}
-  m_LocalScale: {x: 0.024999999, y: 0.024999999, z: 0.024999999}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d914d3cc4921b5642af07dd5abaa84d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d67dbc7b2146e5449343a129b18cb4e, type: 3}
   m_Color: {r: 0.9529412, g: 0.70980394, b: 0.72156864, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -166,7 +166,7 @@ MonoBehaviour:
   bulletSpeed: 5
   bulletDamage: 1
   bulletDestroyTime: 5
---- !u!95 &3664056763035321678
+--- !u!95 &9117801626133649441
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -176,7 +176,7 @@ Animator:
   m_GameObject: {fileID: 5942370938828401323}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dd1bd064a0a08f947bf0019e0e6c419e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 96dc1aabe51098a478c83408c2632181, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
