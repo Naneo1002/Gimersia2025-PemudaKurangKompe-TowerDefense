@@ -11,6 +11,7 @@ public class Plot : MonoBehaviour
 
     private GameObject towerObj;
     public Turret turret;
+    public IceTurret iceTurret;
     // Keep track of which Tower data was used to build the current tower so we can refund on sell
     private Tower builtTower;
     private Color startColor;
@@ -39,7 +40,10 @@ public class Plot : MonoBehaviour
         // Left-click behavior: if there's a tower, open upgrade UI
         if (towerObj != null)
         {
-            turret.OpenUpgradeUI();
+            if (turret != null)
+                turret.OpenUpgradeUI();
+            if (iceTurret != null)
+                iceTurret.OpenUpgradeUI();
             return;
         }
 

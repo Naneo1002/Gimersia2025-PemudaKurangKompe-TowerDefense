@@ -105,4 +105,6 @@ public class IceTurret : MonoBehaviour
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
     }
+
+    public float Range { get { return targetingRange; } }
 }
