@@ -22,7 +22,6 @@ public class Turret : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float targetingRange = 5f;
-    //[SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f; // bullets per second
     [SerializeField] private int baseUpgradeCost = 100;
 
@@ -125,16 +124,6 @@ public class Turret : MonoBehaviour
         if (target == null) return false;
         return Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
-
-    //private void RotateTowardsTarget()
-    //{
-    //    float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
-
-    //    Quaternion targetRotation = Quaternion.Euler(0f, 0f, angle);
-    //    turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-    //}
-
-    // ===== UPGRADE SYSTEM =====
 
     public void OpenUpgradeUI()
     {
