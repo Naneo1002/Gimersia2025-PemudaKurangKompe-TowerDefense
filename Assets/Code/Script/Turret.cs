@@ -166,11 +166,11 @@ public class Turret : MonoBehaviour
         return rangeBase * Mathf.Pow(level, 0.4f);
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        Handles.color = Color.cyan;
-        Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
-    }
+    //private void OnDrawGizmosSelected()
+    //{
+    //    Handles.color = Color.cyan;
+    //    Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
+    //}
 
     // Public accessor so other components (e.g. range indicator) can read the turret's current range
     public float Range { get { return targetingRange; } }
