@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edad2f02be283ec429b497eb6b23ec2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 70
-  currencyWorth: 40
+  hitPoints: 5
+  currencyWorth: 50
   healthBarPrefab: {fileID: 4688471341631164503, guid: c533138d8e19e3d459c4b31058789446, type: 3}
   barOffset: {x: 0, y: 5, z: 0}
   barLocalScale: 1

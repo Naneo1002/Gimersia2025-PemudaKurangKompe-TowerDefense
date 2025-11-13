@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3932189663433859155}
   - component: {fileID: 7099247272819353223}
   - component: {fileID: 4205695607552791969}
-  - component: {fileID: 107742487477740090}
+  - component: {fileID: 5068355609463786617}
   m_Layer: 6
   m_Name: Rogue
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.5, y: 2, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -177,12 +177,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edad2f02be283ec429b497eb6b23ec2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 40
+  hitPoints: 2
   currencyWorth: 30
   healthBarPrefab: {fileID: 4688471341631164503, guid: c533138d8e19e3d459c4b31058789446, type: 3}
   barOffset: {x: 0, y: 5, z: 0}
   barLocalScale: 1
---- !u!95 &107742487477740090
+--- !u!95 &5068355609463786617
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ Animator:
   m_GameObject: {fileID: 1659020007847341582}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 57e3d9516969be0488c02fa323f12e01, type: 2}
+  m_Controller: {fileID: 9100000, guid: 96c2120b2f5875643b755dbcbab47b13, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

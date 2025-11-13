@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/NewGame.unity
     guid: 1ec3fcd323a3983429bb7bd9b0cb4995
   - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: cafd8e37146d7594b869fe6123b4fa21
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay1.unity
+    guid: fca5eb06cb89ce646ad27f480c8f118e
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay2.unity
+    guid: 03a9673cf20751a4eaf115645ed79c55
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
